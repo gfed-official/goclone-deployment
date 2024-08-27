@@ -9,6 +9,3 @@ spec:
   - name: v1
     labels:
       version: v1
-  - name: testing
-    labels:
-      version: testing

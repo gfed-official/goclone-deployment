@@ -16,10 +16,3 @@ spec:
           number: 8080
         host: goclone-svc
         subset: v1
-      weight: 75
-    - destination:
-        port:
-          number: 8080
-        host: goclone-svc
-        subset: testing
-      weight: 25
