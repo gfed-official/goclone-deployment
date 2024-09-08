@@ -28,6 +28,7 @@ data:
   ROUTER_PASSWORD: "vyos"
   ROUTER_PROGRAM: "/usr/bin/sed"
   ROUTER_PROGRAM_ARGS: "-i -e 's/{{THIRD_OCTET}}/%v/g' /config/scripts/vyos-postconfig-bootup.script"
-    #LDAP_ADMIN_DN:
-    #LDAP_ADMIN_PASSWORD:
-    #LDAP_URI:
+  LDAP_BIND_DN: "cn=goclone,cn=Managed Service Accounts,dc=sdc,dc=cpp"
+  LDAP_URL: "ldaps://10.128.30.20:636"
+  LDAP_BASE_DN: "ou=Kamino Users,dc=sdc,dc=cpp"
+  LDAP_INSECURE_TLS: false

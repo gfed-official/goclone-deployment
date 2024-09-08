@@ -39,6 +39,11 @@ spec:
                 secretKeyRef:
                   name: goclone-secret
                   key: password
+            - name: LDAP_BIND_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: goclone-secret
+                  key: ldap_bind_password
           envFrom:
             - configMapRef:
                 name: goclone-config
