@@ -6,7 +6,7 @@ metadata:
 data:
   PORT: "8080"
   LOG_PATH: "/var/log/goclone"
-  FQDN: "goclone.sdc.cpp"
+  FQDN: "kamino.calpolyswift.org"
   DOMAIN: "sdc.cpp"
   VCENTER_URL: "https://elsa.sdc.cpp"
   DATACENTER: "StudentDatacenter"
