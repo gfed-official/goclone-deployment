@@ -33,3 +33,4 @@ data:
   LDAP_BASE_DN: "ou=Kamino Users,dc=sdc,dc=cpp"
   LDAP_INSECURE_TLS: "true"
   LDAP_USER_ATTRIBUTE: "cn"
+  LDAP_GROUP_DN: "cn=Kamino Users,ou=Users,dc=sdc,dc=cpp"
