@@ -44,6 +44,16 @@ spec:
                 secretKeyRef:
                   name: goclone-secret
                   key: ldap_bind_password
+            - name: TLS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: goclone-tls
+                  key: tls.key
+            - name: TLS_CERT
+              valueFrom:
+                secretKeyRef:
+                  name: goclone-tls
+                  key: tls.crt
           envFrom:
             - configMapRef:
                 name: goclone-config
