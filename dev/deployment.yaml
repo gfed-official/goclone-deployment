@@ -47,9 +47,3 @@ spec:
           envFrom:
             - configMapRef:
                 name: goclone-config
-        - name: goclone-redis
-          image: redis:latest
-          ports:
-            - name: redis
-              containerPort: 6379
-          imagePullPolicy: Always
