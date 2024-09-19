@@ -1,0 +1,11 @@
+apiVersion: networking.istio.io/v1
+kind: DestinationRule
+metadata:
+  name: goclone-destination
+  namespace: goclone-dev
+spec:
+  host: goclone-svc
+  subsets:
+  - name: v1
+    labels:
+      version: v1

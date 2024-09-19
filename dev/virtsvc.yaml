@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: goclone-virtual-svc
+  namespace: goclone-dev
+spec:
+  hosts:
+  - goclone-dev.sdc.cpp
+  gateways:
+  - goclone-gateway
+  http:
+  - name: "goclone-v1-routes"
+    route:
+    - destination:
+        port:
+          number: 8080
+        host: goclone-svc
+        subset: v1

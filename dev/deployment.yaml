@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: goclone-v1
-  namespace: goclone
+  namespace: goclone-dev
 spec:
   replicas: 1
   selector:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: goclone
-          image: evanjd711/goclone:latest
+          image: evanjd711/goclone:development
           ports:
             - name: http
               containerPort: 8080
@@ -47,3 +47,9 @@ spec:
           envFrom:
             - configMapRef:
                 name: goclone-config
+        - name: goclone-redis
+          image: redis:latest
+          ports:
+            - name: redis
+              containerPort: 6379
+          imagePullPolicy: Always
