@@ -32,7 +32,7 @@ data:
   NATTED_ROUTER_PATH: "/StudentDatacenter/vm/Templates/Networking/1:1NAT_VyOS_PodRouter"
   PORT: "8080"
   PORT_GROUP_SUFFIX: "PodNetwork"
-  PRESET_TEMPLATE_RESOURCE_POOL: "07-01_GuestTemplates"
+  PRESET_TEMPLATE_RESOURCE_POOL: "07-01_Templates"
   ROUTER_PASSWORD: "vyos"
   ROUTER_PATH: "/StudentDatacenter/vm/Templates/Networking/VyOS_PodRouter"
   ROUTER_PROGRAM: "/usr/bin/sed"
