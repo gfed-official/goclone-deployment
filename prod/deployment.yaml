@@ -25,8 +25,8 @@ spec:
             httpGet:
               path: /api/v1/health
               port: 8080
-            initialDelaySeconds: 5
-            periodSeconds: 3
+            initialDelaySeconds: 60
+            periodSeconds: 10
           imagePullPolicy: Always
           env:
             - name: VCENTER_USERNAME
