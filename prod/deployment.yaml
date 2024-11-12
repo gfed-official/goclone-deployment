@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
         - name: goclone
+          restartPolicy: Never
           image: cppcyber/goclone:latest
           ports:
             - name: http
@@ -29,11 +30,6 @@ spec:
             periodSeconds: 10
           imagePullPolicy: Always
           env:
-            - name: GOCLONE_PROVIDER_API_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: goclone-secret
-                  key: username
             - name: GOCLONE_PROVIDER_API_PASSWORD
               valueFrom:
                 secretKeyRef:
