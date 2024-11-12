@@ -29,17 +29,17 @@ spec:
             periodSeconds: 10
           imagePullPolicy: Always
           env:
-            - name: VCENTER_USERNAME
+            - name: GOCLONE_PROVIDER_API_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: goclone-secret
                   key: username
-            - name: VCENTER_PASSWORD
+            - name: GOCLONE_PROVIDER_API_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: goclone-secret
                   key: password
-            - name: LDAP_BIND_PASSWORD
+            - name: GOCLONE_AUTH_LDAP_BIND_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: goclone-secret
