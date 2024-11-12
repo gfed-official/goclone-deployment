@@ -17,7 +17,6 @@ spec:
     spec:
       containers:
         - name: goclone
-          restartPolicy: Never
           image: cppcyber/goclone:latest
           ports:
             - name: http
