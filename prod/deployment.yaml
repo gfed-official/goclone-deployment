@@ -29,7 +29,7 @@ spec:
             periodSeconds: 10
           imagePullPolicy: Always
           env:
-            - name: GOCLONE_PROVIDER_APIPASSWORD
+            - name: GOCLONE_PROVIDER_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: goclone-secret
